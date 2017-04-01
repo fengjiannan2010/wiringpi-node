@@ -21,32 +21,7 @@ check_make_ok() {
   fi
 }
 
-check_git_clone() {
-  if [ $? != 0 ]; then
-    echo "failed."
-    echo ""
-    echo "================================================================================"
-    echo "FATAL: Cloning libWiringPi failed."
-    echo "Please check install.log and fix any problems. If you're still stuck,"
-    echo "then please open a new issue then post all the output and as many details as you can to"
-    echo "  https://github.com/WiringPi/WiringPi-Node/issues"
-    echo "================================================================================"
-    echo ""
-    exit 1
-  fi
-}
-
 rm ./install.log 2>/dev/null 1>&2
-
-echo -n "Cloning libWiringPi ... "
-rm -Rf ./wiringpi 2>/dev/null 1>&2
-git clone https://github.com/WiringPi/WiringPi.git > ./install.log 2>&1
-check_git_clone
-#git submodule init
-#check_git_clone
-#git submodule update
-#check_git_clone
-echo "done."
 
 echo -n "Making libWiringPi ... "
 cd ./WiringPi/wiringPi/
