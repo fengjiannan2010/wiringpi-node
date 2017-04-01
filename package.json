@@ -1,0 +1,29 @@
+{
+  "name": "wiringpi-node",
+  "version": "2.4.4",
+  "description": "Bindings to WiringPi-Node",
+  "main": "lib/exports.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "/bin/bash ./install.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WiringPi/WiringPi-Node.git"
+  },
+  "keywords": [
+    "wiringPi",
+    "gpio",
+    "raspberry",
+    "pi",
+    "raspberrypi",
+    "bcm2835",
+    "wiringpi-node"
+  ],
+  "author": "Jiannan Feng <fengjiannan2010@163.com>",
+  "contributors": [
+    "Leandre Gohy <leandre.gohy@hexeo.be>",
+    "Eugene Ware <eugene@noblesamurai.com>"
+  ],
+  "license": "BSD"
+}
